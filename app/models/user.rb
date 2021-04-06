@@ -20,5 +20,6 @@ class User < ActiveRecord::Base
     else
       nil
   end
+  #test
 end
 end
