@@ -7,11 +7,11 @@ RSpec.feature "ProductDetails", type: :feature, js: true do
 
     10.times do |n|
       @category.products.create!(
-  name:  Faker::Hipster.sentence(3),
-  description: Faker::Hipster.paragraph(4),
-  image: open_asset('apparel1.jpg'),
-  quantity: 10,
-  price: 64.99
+      name:  Faker::Hipster.sentence(3),
+      description: Faker::Hipster.paragraph(4),
+      image: open_asset('apparel1.jpg'),
+      quantity: 10,
+      price: 64.99
 )
     end
   end
@@ -19,11 +19,13 @@ RSpec.feature "ProductDetails", type: :feature, js: true do
   scenario "They see all products" do
     # ACT
     visit root_path
-
-    # DEBUG
-    save_screenshot
+    first(".product").click_on('Details')
 
     # VERIFY
-    expect(page).to have_css 'article.product', count: 20
+    expect(page).to have_content "Quantity"
+    
+    # DEBUG
+    save_screenshot
+    
   end
 end
