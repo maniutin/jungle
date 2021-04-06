@@ -34,5 +34,6 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 
 ## Final Product
 
-!["screenshot description"](#)
-!["screenshot description"](#)
+!["Homepage"](https://github.com/maniutin/jungle/blob/master/docs/homepage.png?raw=true)
+!["Payment"](https://github.com/maniutin/jungle/blob/master/docs/payment.png?raw=true)
+!["Completed Order"](https://github.com/maniutin/jungle/blob/master/docs/completed_order.png?raw=true)
